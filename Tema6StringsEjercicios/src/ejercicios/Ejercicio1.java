@@ -10,11 +10,7 @@ public class Ejercicio1 {
 
 		String frase1 = "";
 
-		int longitud1;
-
 		String frase2 = "";
-
-		int longitud2;
 
 		System.out.println("Introduza una frase. ");
 
@@ -24,12 +20,16 @@ public class Ejercicio1 {
 
 		frase2 = dogma.next();
 
+		// si la longitud de frase1 igual a la longitud de frase2
 		if (frase1.length() == frase2.length()) {
 			System.out.println("Las dos frases son igual de largas.");
 
+			// si la longitud de frase1 mayor a la longitud de frase2
 		} else if (frase1.length() > frase2.length()) {
 			System.out.println("La segunda frase es mas corta.");
 
+			// si la longitud de frase1 menor (el unico caso que queda)
+			// a la longitud de frase2
 		} else {
 			System.out.println("La primera frase es mas corta.");
 		}
