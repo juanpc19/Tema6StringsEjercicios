@@ -14,11 +14,15 @@ public class Ejercicio1 {
 
 		System.out.println("Introduza una frase. ");
 
-		frase1 = dogma.next();
+		// uso nextLine en lugar de next, porque next para de leer si encuentra espacio
+		// en string
+		frase1 = dogma.nextLine();
 
 		System.out.println("Introduza una frase. ");
 
-		frase2 = dogma.next();
+		// uso nextLine en lugar de next, porque next para de leer si encuentra espacio
+		// en string
+		frase2 = dogma.nextLine();
 
 		// si la longitud de frase1 igual a la longitud de frase2
 		if (frase1.length() == frase2.length()) {

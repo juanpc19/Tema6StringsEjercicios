@@ -15,7 +15,9 @@ public class Ejercicio2Avanzado {
 
 		System.out.println("Introduzca contraseña jugador 1: ");
 
-		contraseñaJugador1 = dogma.next();
+		// uso nextLine en lugar de next, porque next para de leer si encuentra espacio
+		// en string
+		contraseñaJugador1 = dogma.nextLine();
 
 		char pistaJugador[] = new char[contraseñaJugador1.length()];//guardara los char extraidos de la string contraseñaJugador2 
 		//y lo inicializo con longitud igual a contraseñaJugador1
@@ -25,7 +27,9 @@ public class Ejercicio2Avanzado {
 
 			System.out.println("Jugador 2 intente adivinar la contraseña del jugador 1: ");
 
-			contraseñaJugador2 = dogma.next();
+			// uso nextLine en lugar de next, porque next para de leer si encuentra espacio
+			// en string
+			contraseñaJugador2 = dogma.nextLine();
 
 			// si la contraseña a adivinar es mas larga
 			if (contraseñaJugador1.length() > contraseñaJugador2.length()) {
@@ -56,7 +60,7 @@ public class Ejercicio2Avanzado {
 
 				}
 				// muestro las pista al jugador
-				System.out.println(Arrays.toString(pistaJugador));
+				System.out.println("Estas son las letras que ha acertado: " + Arrays.toString(pistaJugador));
 			}
 
 		}
