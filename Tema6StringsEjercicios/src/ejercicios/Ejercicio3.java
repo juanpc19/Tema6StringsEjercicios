@@ -25,12 +25,9 @@ public class Ejercicio3 {
 			}
 		}
 		
-		
-		
 		System.out.println("La frase tiene " + contador + " espacios en blancos");
 
 		dogma.close();
-
 	}
 
 }
