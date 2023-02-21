@@ -6,11 +6,6 @@ public class Ejercicio9 {
 
 	public static void main(String[] args) {
 
-		// cambiar la de arriba por la de abajo, si no esta dejar igual
-		// palabra
-		// busco posicion oincidencia en conj1 obtengo esa pos uso esa pos en conj2
-		// extraigo valor pos y doy ese valor a return
-
 		char conjuntoC1[] = { 'e', 'i', 'k', 'm', 'p', 'q', 'r', 's', 't', 'u', 'v' };// guardara valores predefinidos
 																						// para codificacion
 
@@ -35,10 +30,9 @@ public class Ejercicio9 {
 		for (int i = 0; i < mensaje.length(); i++) {
 
 			// llamo a la funcion codifica dandole los arrays del main y el char
-			// correspondiente al charAt posicion i y añado el valor devuelto pur la funcion
+			// correspondiente al charAt pFosicion i y añado el valor devuelto pur la funcion
 			// a la cadena mensajeCodificado, creando asi el mensajeCodificado
 			mensajeCodificado += Funciones.codifica(conjuntoC1, conjuntoC2, mensaje.charAt(i));
-
 		}
 
 		// print del mensaje codificado

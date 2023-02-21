@@ -72,4 +72,50 @@ public class Funciones {
 		return caracterCodificado;
 	}
 
+	/**
+	 * funcion estatica que recibira un caracter y 2 conjuntos de caracteres, si el
+	 * caracter se encuentra en conjunto2 cambiara dicho caracter por su
+	 * correspondiente en conjunto 1 y lo devolvera en el return de lo contrario no
+	 * modificara el caracter y lo devolvera sin mas
+	 * 
+	 * @param conjunto1 parametro de entrada que contendra letras para codificacion
+	 * @param conjunto2 parametro de entrada que contendra letras para codificacion
+	 * @param caracter  contendra un caracter extraido de la cadena introducida por
+	 *                  el usuario
+	 * @return caracterCodificado contendra el caracter modificado o no segun el
+	 *         caracter pasado como parametro de entrada haya sido encontrado en
+	 *         conjunto2 o no
+	 */
+	static char descodifica(char conjunto1[], char conjunto2[], char caracter) {
+
+		char caracterDescodificado = caracter;// doy a caracterDescodificado valor de caracter
+
+		int indiceBusqueda = 0;// inicializo variable a 0 para uso en bucle
+
+		// ejecuto busqueda mientras indiceBusqueda sea menor a longitud del array y
+		// mientras el valor buscado no se encuentre en la posicion del array indicada
+		// por indiceBusqueda
+		while (indiceBusqueda < conjunto2.length && caracter != conjunto2[indiceBusqueda]) {
+			indiceBusqueda++;
+		}
+
+		// si indice busqueda menor que longitud array conjunto2 significa que he
+		// encontrado el valor buscado en el array, estaria en posicion indiceBusqueda
+		if (indiceBusqueda < conjunto2.length) {
+			// en tal caso sustituyo valor de caracterDescodificado por valor de posicion
+			// indiceBusqueda en array conjunto1
+			caracterDescodificado = conjunto1[indiceBusqueda];
+		}
+
+		// si indice busqueda igual o mayor que longitud array conjunto2 significa que
+		// el valor buscado no se encuentra en el array
+		else {
+			// en tal caso no modifico caracterDescodificado y la funcion lo devuelve con
+			// valor
+			// igual al recibido por caracter como parametro de entrada
+		}
+
+		return caracterDescodificado;
+	}
+
 }

@@ -7,9 +7,9 @@ public class Ejercicio5 {
 
 	public static void main(String[] args) {
 
-		String texto[] = new String[0];
+		String texto[] = new String[0];// creo array de longitud 0 donde guardare las palabras que vaya introduciendo el usuario (metodo split añadira longitud necesaria)
 
-		String palabra = "";
+		String palabra = "";// guardara palabra introducida por el usuario
 
 		Scanner dogma = new Scanner(System.in);
 
@@ -28,7 +28,7 @@ public class Ejercicio5 {
 				palabra += " ";
 				// extiendo longitud de array texto en +1
 				texto = Arrays.copyOf(texto, texto.length + 1);
-				// añado palabra al array texto
+				// añado palabra al array texto en ultima posicion añadida
 				texto[texto.length - 1] = palabra;
 			}
 		}
