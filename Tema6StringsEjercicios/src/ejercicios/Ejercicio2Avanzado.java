@@ -59,7 +59,7 @@ public class Ejercicio2Avanzado {
 					}
 
 				}
-				// muestro las pista al jugador
+				
 				System.out.println("Estas son las letras que ha acertado: " + Arrays.toString(pistaJugador));
 			}
 

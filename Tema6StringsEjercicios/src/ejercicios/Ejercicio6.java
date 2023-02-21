@@ -32,7 +32,7 @@ public class Ejercicio6 {
 		// recorro array palabras
 		for (String auxiliar : palabras) {
 			// comoprobando si el valor de la posicion actual es igual a la string palabra
-			if (auxiliar.equals(palabra)) {
+			if (auxiliar.equalsIgnoreCase(palabra)) {
 				// de serlo añado +1 a contador
 				contador++;
 			}
