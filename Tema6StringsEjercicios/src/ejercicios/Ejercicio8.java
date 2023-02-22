@@ -20,6 +20,7 @@ public class Ejercicio8 {
 		// Javalin, javalon sos javalen, len, len
 
 		// si la cadena empieza por "Javalin, javalon" y acaba en "javalen, len, len"
+		//no necesario para el ejercicio pero lo hago para extraer lo de en medio
 		if ((frase.startsWith("Javalin, javalon		") == true && frase.endsWith("		javalen, len, len") == true)) {
 			// elimino las muletillas y me quedo con el mensaje
 			mensaje = frase.substring("Javalin, javalon		".length(),

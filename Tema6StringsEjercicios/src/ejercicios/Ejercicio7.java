@@ -34,6 +34,7 @@ public class Ejercicio7 {
 			fraseSinEspacios += auxiliar;
 		}
 
+		//paso la frase a minusculas para evitar errores de igualdad
 		fraseSinEspacios = fraseSinEspacios.toLowerCase();
 
 		// print para comprobar funcionamiento
