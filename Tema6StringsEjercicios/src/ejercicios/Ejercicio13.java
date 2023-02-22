@@ -9,7 +9,7 @@ public class Ejercicio13 {
 		String frase = "";// guardara la frase introducida por el usuario, lo inicializo a vacio para uso
 							// en bucle
 
-		String abecedario = "abcdefghijklmnñopqrstuvwxyz";// guardara las letras del abecedario, lo inicializo a con
+		String abecedario = "abcdefghijklmnñopqrstuvwxyz";// guardara las letras del abecedario, lo inicializo con
 															// letras del abecedario para uso en bucle
 
 		char caracter = '*';// guardara un caracter concreto del abecedario, lo inicializo a * para uso en
