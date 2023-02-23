@@ -118,19 +118,36 @@ public class Funciones {
 		return caracterDescodificado;
 	}
 
+	/**
+	 * funcion que recibira un array char extraido de una cadena, y pondra los
+	 * valores de ese array en otro array en posiciones aleatorias
+	 * 
+	 * @param arrayCadena parametro de entrada que contendra los caracteres a
+	 *                    insertar en el otro array
+	 * @return arrayCadenaDevuelto array que contendra los caracteres de arrayCadena
+	 *         en posiciones aleatorias
+	 */
 	static char[] desordenaCadena(char[] arrayCadena) {
 
-		char arrayCadenaDevuelto[] = new char[arrayCadena.length];
+		char arrayCadenaDevuelto[] = new char[arrayCadena.length];//declaro arrayCadenaDevuelto y le doy longitud igual a la de arrayCadena
 
-		int posicion = 0;
+		int posicion = 0;//declaro variable que guardara la posicion que se esta recorriendo de arrayCadena
 
-		int posicionAleatoria=0;
+		int posicionAleatoria = 0;//declaro variable que guardara una posicion aleatoria
 
+		//bucle que se ejecutara mientras la posicion actual sea menor a la longitud de arrayCadena 
+		//llenando el arrayCadenaDevuelto con los valores de arrayCadena
 		while (posicion < arrayCadena.length) {
 
+			//doy a posicionAleatoria valor aleatorio enter 0 y longitud de arrayCadena (20, que el metodo pasara a 1 menos (19)) con Math.random 
 			posicionAleatoria = (int) (Math.random() * arrayCadena.length);
+			
+			//si la posicion aleatoria de arrayCadenaDevuelto esta vacia 
 			if (arrayCadenaDevuelto[posicionAleatoria] == 0) {
-				arrayCadenaDevuelto[posicionAleatoria]=arrayCadena[posicion];
+				
+				//le doy a esa posicion valor igual a posicion actual en arrayCadena
+				arrayCadenaDevuelto[posicionAleatoria] = arrayCadena[posicion];
+				//y aumento en +1 el valor de posicion
 				posicion++;
 			}
 		}
