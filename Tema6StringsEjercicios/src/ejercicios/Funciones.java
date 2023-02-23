@@ -118,4 +118,23 @@ public class Funciones {
 		return caracterDescodificado;
 	}
 
+	static char[] desordenaCadena(char[] arrayCadena) {
+
+		char arrayCadenaDevuelto[] = new char[arrayCadena.length];
+
+		int posicion = 0;
+
+		int posicionAleatoria=0;
+
+		while (posicion < arrayCadena.length) {
+
+			posicionAleatoria = (int) (Math.random() * arrayCadena.length);
+			if (arrayCadenaDevuelto[posicionAleatoria] == 0) {
+				arrayCadenaDevuelto[posicionAleatoria]=arrayCadena[posicion];
+				posicion++;
+			}
+		}
+		return arrayCadenaDevuelto;
+	}
+
 }

@@ -50,7 +50,7 @@ public class Ejercicio12 {
 		// System.out.println(Arrays.toString(letrasPalabra2));
 
 		// si ambos arrays son iguales
-		if (Arrays.equals(letrasPalabra1, letrasPalabra2) == true) {
+		if (Arrays.equals(letrasPalabra1, letrasPalabra2)) {
 			// comunico que las palabras son anagramas mediante mensaje por consola
 			System.out.println("Las palabras son anagramas.");
 		}
